@@ -92,7 +92,7 @@ const SearchWeather = () => {
                                 </form>
                                 {weatherData && ( // Check if weatherData is not null
                                     <div className="bg-dark bg-opacity-50 py-3">
-                                        <h5 className="card-title">{city}</h5>
+                                        <h5 className="card-title">{weatherData.name}</h5>
                                         <p className="card-text lead">{day}, {month} {date}, {year}
                                             <br />
                                             {time}
