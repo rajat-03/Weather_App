@@ -11,7 +11,7 @@ const SearchWeather = () => {
         async function fetchAPI() {
             try {
                 const API_key = process.env.REACT_APP_API_KEY;
-                const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}&units=metric`);
+                const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}&units=metric`);
                 console.log(response.data);
 
                 setWeatherData(response.data);
