@@ -63,12 +63,6 @@ const SearchWeather = () => {
     let month = d.toLocaleString("default", { month: 'long' });
     let day = d.toLocaleString("default", { weekday: 'long' });
 
-    //Time
-    let time = d.toLocaleString([], {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit'
-    });
 
     return (
         <>
@@ -94,8 +88,6 @@ const SearchWeather = () => {
                                     <div className="bg-dark bg-opacity-50 py-3">
                                         <h5 className="card-title">{weatherData.name}</h5>
                                         <p className="card-text lead">{day}, {month} {date}, {year}
-                                            <br />
-                                            {time}
                                         </p>
                                         <hr />
                                         <i className={`fas ${emoji} fa-4x`} />
